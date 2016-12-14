@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="user"
+            type="net.numa08.updaterealmadapter.User"/>
+    </data>
+    <net.numa08.updaterealmadapter.PicassoTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="72dp"
+        android:gravity="center_vertical"
+        tools:drawableLeft="@mipmap/ic_launcher"
+        android:text="@{user.name}"
+        android:icon="@{user.image}"
+        tools:text="hogehoge"/>
+
+</layout>
